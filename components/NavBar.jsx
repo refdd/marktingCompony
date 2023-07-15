@@ -1,7 +1,7 @@
 import React from "react";
 import MenuBar from "./MenuBar";
 import Image from "next/image";
-import logo from "../public/assets/logo (2).png";
+import logo from "../public/assets/logo.jpg";
 import { AiOutlineSearch, AiFillPhone } from "react-icons/ai";
 import { BsBagDashFill } from "react-icons/bs";
 function NavBar() {
@@ -10,12 +10,12 @@ function NavBar() {
       <div className="container mx-auto">
         <div className=" grid grid-cols-3 items-center gap-3 py-4 md:py-0 md:grid-cols-4 md:gap-5 ">
           <MenuBar />
-          <div className="relative w-[200px] h-[120px]  md:w-[300px] md:h-[150px] md:col-span-1  ">
+          <div className="relative w-[200px] h-[120px]  md:w-[300px] md:h-[130px] md:col-span-1  ">
             <Image
               src={logo}
               fill
               alt="logo "
-              className=" cursor-pointer"
+              className=" cursor-pointer object-contain"
               loading="eager"
             />
           </div>
@@ -44,10 +44,10 @@ function NavBar() {
               <div className="flex items-center gap-3">
                 <AiOutlineSearch className="text-3xl text-textColor" />
                 <BsBagDashFill className="text-3xl text-textColor transition-all cursor-pointer hover:text-secondColor" />
-                <div className="flex justify-center items-center gap-2 py-4 px-5 bg-secondColor transition-all cursor-pointer hover:shadow-md hover:-translate-y-1">
+                <div className="flex justify-center items-center gap-2 py-3 px-5 bg-secondColor transition-all cursor-pointer hover:shadow-md hover:-translate-y-1">
                   <AiFillPhone className="text-white text-lg" />
-                  <span className="text-white text-xl font-medium capitalize font-Sarabun">
-                    020 7946 0020
+                  <span className="text-white text-sm font-medium capitalize font-Sarabun">
+                    +966 (12) 536-1439
                   </span>
                 </div>
               </div>

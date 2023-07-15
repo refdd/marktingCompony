@@ -12,9 +12,9 @@ module.exports = {
         Sarabun: ["Sarabun", ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        mainColor: "#1b4962",
-        secondColor: "#e94d65",
-        textColor: "#181818",
+        mainColor: "#38352c",
+        secondColor: "#ba8e21",
+        textColor: "#313131",
         textPurple: "#704f88",
         MainYeloow: "#FFD440",
         secandTextColor: "#462472",
